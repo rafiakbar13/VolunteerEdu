@@ -1,0 +1,30 @@
+{
+	"folders": {},
+	"connections": {
+		"sqlite_jdbc-18158764b25-5ccd4ec69f7f9e2d": {
+			"provider": "sqlite",
+			"driver": "sqlite_jdbc",
+			"name": "VolunteerEdu.db",
+			"save-password": true,
+			"read-only": false,
+			"configuration": {
+				"database": "D:\\UniversitasNegeriJakarta\\PERKULIAHAN\\smt116\\ruangguru\\final-project-engineering-74\\backend\\database\\VolunteerEdu.db",
+				"url": "jdbc:sqlite:D:\\UniversitasNegeriJakarta\\PERKULIAHAN\\smt116\\ruangguru\\final-project-engineering-74\\backend\\database\\VolunteerEdu.db",
+				"type": "dev",
+				"auth-model": "native",
+				"handlers": {}
+			}
+		}
+	},
+	"connection-types": {
+		"dev": {
+			"name": "Development",
+			"color": "255,255,255",
+			"description": "Regular development database",
+			"auto-commit": true,
+			"confirm-execute": false,
+			"confirm-data-change": false,
+			"auto-close-transactions": false
+		}
+	}
+}
