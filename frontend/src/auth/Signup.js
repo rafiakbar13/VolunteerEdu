@@ -20,7 +20,7 @@ const Signup = () => {
   const navigate = useNavigate();
 
   const onSubmit = data => {
-    axios.post("http://localhost:8080/api/v1/users/regist", data)
+    axios.post("https://go-volunteeredu.herokuapp.com/api/v1/users/regist", data)
       .then(res => {
         if(res.status === 200){
           console.log(res.data);
