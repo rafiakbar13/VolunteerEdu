@@ -25,7 +25,7 @@ useEffect(() => {
     formData.append("image", image);
     formData.append("description", description);
     try {
-      await axios.patch(`http://localhost:8080/api/v1/gallery/update/${id}`, formData,{
+      await axios.patch(`https://go-volunteeredu.herokuapp.com/api/v1/gallery/update/${id}`, formData,{
         headers: {
           "Content-Type": "multipart/form-data",
         },
@@ -38,7 +38,7 @@ useEffect(() => {
 
   const getGalleryById = async () => {
     const response = await axios.get(
-      `http://localhost:8080/api/v1/gallery/${id}`)
+      `https://go-volunteeredu.herokuapp.com/api/v1/gallery/${id}`)
       setImage(response.data.data.image);
       setDescription(response.data.data.description)
       // console.log(response.data.data.description);

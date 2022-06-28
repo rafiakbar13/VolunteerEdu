@@ -14,7 +14,7 @@ export default function Login() {
     const Auth = async (e) => {
         e.preventDefault();
         try {
-            await axios.post('http://localhost:8080/api/v1/users/login', {
+            await axios.post('https://go-volunteeredu.herokuapp.com/api/v1/users/login', {
                 email: email,
                 password: password
             }).then(res => {

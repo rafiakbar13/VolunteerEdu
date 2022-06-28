@@ -58,9 +58,9 @@ function App() {
 
   const refreshToken = async () => {
     try {
-        const response = await axios.get('http://localhost:8080/api/v1/users/token');
+        const response = await axios.get('https://go-volunteeredu.herokuapp.com/api/v1/users/token');
         const token = response.data.data;
-        const userId = await axios.get('http://localhost:8080/api/v1/users/'+token);
+        const userId = await axios.get('https://go-volunteeredu.herokuapp.com/api/v1/users/'+token);
         localStorage.setItem('roleId', userId.data.data.role_user_id);
         localStorage.setItem('userId', userId.data.data.user_id);
         setisLogin(true)

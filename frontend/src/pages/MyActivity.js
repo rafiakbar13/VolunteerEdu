@@ -24,7 +24,7 @@ export default function MyActivity() {
       try {
         const userid = localStorage.getItem("userId");
         const response = await axios.get(
-          "http://localhost:8080/api/v1/myactivity/" + userid
+          "https://go-volunteeredu.herokuapp.com/api/v1/myactivity/" + userid
         );
         setData(response.data.data);
       } catch (error) {

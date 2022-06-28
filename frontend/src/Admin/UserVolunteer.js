@@ -19,7 +19,7 @@ export default function UserVolunteer() {
     useEffect(() => {
         const fetchData = async () => {
           try {
-            const {data: response} = await axios.get('http://localhost:8080/api/v1/volunteer');
+            const {data: response} = await axios.get('https://go-volunteeredu.herokuapp.com/api/v1/volunteer');
             setData(response.data);
           } catch (error) {
             console.error(error.message);

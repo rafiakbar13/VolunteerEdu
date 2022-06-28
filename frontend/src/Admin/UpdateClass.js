@@ -36,7 +36,7 @@ function UpdateClass() {
     formData.append("detail", detail);
 
     try {
-      await axios.patch(`http://localhost:8080/api/v1/class/update/${id}`, formData,{
+      await axios.patch(`https://go-volunteeredu.herokuapp.com/api/v1/class/update/${id}`, formData,{
         headers: {
           "Content-Type": "multipart/form-data",
         },
@@ -49,7 +49,7 @@ function UpdateClass() {
 
   const getClassById = async () => {
     try {
-      const res = await axios.get(`http://localhost:8080/api/v1/classes/${id}`);
+      const res = await axios.get(`https://go-volunteeredu.herokuapp.com/api/v1/classes/${id}`);
       setTitle(res.data.data.title);
       setDate(res.data.data.date);
       setTime(res.data.data.time);
