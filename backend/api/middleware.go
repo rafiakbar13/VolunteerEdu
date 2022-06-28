@@ -10,7 +10,7 @@ import (
 
 func (h *API) AllowOrigin(c *gin.Context) {
 	// localhost:8080 origin mendapat ijin akses
-	c.Writer.Header().Set("Access-Control-Allow-Origin", "http://localhost:8080")
+	c.Writer.Header().Set("Access-Control-Allow-Origin", "*")
 	// semua method diperbolehkan masuk
 	c.Writer.Header().Set("Access-Control-Allow-Methods", "POST, GET, OPTIONS, PUT, DELETE, PATCH")
 	// semua header diperbolehkan untuk disisipkan
