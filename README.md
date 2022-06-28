@@ -1,6 +1,6 @@
 # Final Project Kelompok 74 - VolunteerEdu
 
-![Image alt text](assets/logoVE.png)
+![Image alt text](frontend/src/assets/logoVE.png)
 
 Sebuah platform berbasis website yang mengadakan  kelas pembelajaran secara tatap muka maupun daring kepada anak-anak maupun orang tua di daerah-daerah Indonesia .
 
@@ -298,7 +298,7 @@ $ open -n -a /Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome --ar
 [Link Mockup Design Using Figma](https://www.figma.com/file/RkZCScujaaZJyYTUQsWWiE/Untitled?node-id=0%3A1)
 
 ### ERD Database
-![Image alt text](assets/ERD_volunteeredu.png)
+![Image alt text](frontend/src/assets/ERD_volunteeredu.png)
 
 ### Pitch Deck
 [Link PPT Pitch Deck VolunteerEdu](https://docs.google.com/presentation/d/1ThDTCRhtAMq4akMxU5Lp7BXsrnnKF14apjOwhYiCWeQ/edit#slide=id.p1)
