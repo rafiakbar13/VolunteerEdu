@@ -12,13 +12,13 @@ const ListClass = () => {
   }, []);
 
   const getClass = async () => {
-    const res = await axios.get("http://localhost:8080/api/v1/classes");
+    const res = await axios.get("https://go-volunteeredu.herokuapp.com/api/v1/classes");
     setClasses(res.data.data);
   };
 
   const deleteClass = async (id) => {
     try {
-      await axios.delete(`http://localhost:8080/api/v1/class/delete/${id}`);
+      await axios.delete(`https://go-volunteeredu.herokuapp.com/api/v1/class/delete/${id}`);
       getClass();
     } catch (error) {
       console.log(error);

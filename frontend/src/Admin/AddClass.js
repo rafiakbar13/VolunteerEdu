@@ -29,7 +29,7 @@ function AddClass() {
     formData.append("detail", detail);
 
     try {
-      await axios.post("http://localhost:8080/api/v1/add/class", formData, {
+      await axios.post("https://go-volunteeredu.herokuapp.com/api/v1/add/class", formData, {
         headers: {
           "Content-Type": "multipart/form-data",
         },

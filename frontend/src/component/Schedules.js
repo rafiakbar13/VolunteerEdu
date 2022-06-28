@@ -16,7 +16,7 @@ export default function Schedules() {
     const fetchData = async () => {
       try {
         const response = await axios.get(
-          "http://localhost:8080/api/v1/class/limit"
+          "https://go-volunteeredu.herokuapp.com/api/v1/class/limit"
         );
         setData(response.data.data);
       } catch (error) {
@@ -32,7 +32,7 @@ export default function Schedules() {
       class_id: class_id,
       role_act_id: 1
     };
-    axios.post("http://localhost:8080/api/v1/chooserole", chooseRole)
+    axios.post("https://go-volunteeredu.herokuapp.com/api/v1/chooserole", chooseRole)
     .then(res => {
     if(res.status === 200) {
       swal({
@@ -65,7 +65,7 @@ export default function Schedules() {
         class_id: class_id,
         role_act_id: 2
       };
-      axios.post("http://localhost:8080/api/v1/chooserole", chooseRole)
+      axios.post("https://go-volunteeredu.herokuapp.com/api/v1/chooserole", chooseRole)
       .then(res => {
         swal({
           title: "Berhasil",

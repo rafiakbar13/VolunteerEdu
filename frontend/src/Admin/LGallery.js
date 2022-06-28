@@ -13,14 +13,14 @@ const ListGallery = () => {
   }, []);
 
   const getImage = async () => {
-    const res = await axios.get("http://localhost:8080/api/v1/gallery");
+    const res = await axios.get("https://go-volunteeredu.herokuapp.com/api/v1/gallery");
     console.log(res.data.data);
     setImage(res.data.data);
   };
 
   const deleteImage = async (id) => {
     try {
-      await axios.delete(`http://localhost:8080/api/v1/gallery/delete/${id}`);
+      await axios.delete(`https://go-volunteeredu.herokuapp.com/api/v1/gallery/delete/${id}`);
       getImage();
     } catch (error) {
       console.log(error);

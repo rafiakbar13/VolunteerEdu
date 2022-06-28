@@ -15,7 +15,7 @@ function Navbar() {
 
   const logout = async () => {
     try {
-      const response = await axios.post('http://localhost:8080/api/v1/users/logout');
+      const response = await axios.post('https://go-volunteeredu.herokuapp.com/api/v1/users/logout');
       if(response.status === 200) {
        document.cookie = "token" + '=; exp=Thu, 01 Jan 1970 00:00:01 GMT;';
        localStorage.removeItem('roleId');

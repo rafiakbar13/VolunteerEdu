@@ -12,7 +12,7 @@ export default function Gallerys() {
       const fetchData = async () =>{
         setLoading(true);
         try {
-          const {data: response} = await axios.get('http://localhost:8080/api/v1/gallery/limit');
+          const {data: response} = await axios.get('https://go-volunteeredu.herokuapp.com/api/v1/gallery/limit');
           setData(response.data);
         } catch (error) {
           console.error(error.message);

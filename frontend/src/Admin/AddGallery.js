@@ -21,7 +21,7 @@ function AddGallery() {
     formData.append("description", description);
    try {
     const response = await axios.post(
-      "http://localhost:8080/api/v1/gallery/add",formData,
+      "https://go-volunteeredu.herokuapp.com/api/v1/gallery/add",formData,
       {
         
         headers: {
